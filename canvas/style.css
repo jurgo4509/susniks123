@@ -1,0 +1,18 @@
+/* canvas {
+    border:1px solid #020202;
+    background-color:#d3d3d3;
+} */
+.content{
+    margin: auto;
+    max-width: 615px;
+}
+h3 {
+    text-align: center;  
+}
+
+body {
+    background-color: seashell;
+}
+img {
+    display: none;
+}
