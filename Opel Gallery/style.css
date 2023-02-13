@@ -1,0 +1,57 @@
+body {
+    margin: 40px auto;
+    max-width: 670px;
+    line-height: 1.6;
+    font-size: 18px;
+    color:#444; 
+    background-color: #EEE;
+    padding: 0 10px;
+}
+
+h1,h2,h3 {
+    line-height: 1.2;
+}
+
+canvas {
+    background-color: #FFF;
+    border: 1px black solid;
+}
+
+button {
+    border: black solid 1px;
+    border-radius: 5px;
+    height: 35px;
+    width: 49%;
+    background-color: #FFF;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #DDD;
+}
+
+td {
+    border: solid black 1px;
+    padding: 0;
+    line-height: 0;
+}
+
+td:hover {
+    border: solid rgb(255, 0, 0) 1px;   
+}
+
+.small {
+    height: 46px;
+}
+
+.top {
+    display: flex;
+}
+
+.leftchild{
+    order: 0;
+}
+
+.rightChild {
+    order: 1;
+}
