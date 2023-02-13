@@ -1,2 +1,2 @@
-# susniks123
-k
+# Dažādi prikoli
+paldies
