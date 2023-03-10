@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+		<title>Datums un laiks</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="big">
+			<h1 class="center">Datumi</h1>
+			<div class="small">
+				<h3>Cāļi</h3>
+				<p>Ievadiet perēšanas sākšanas datumu formā gads-mēnesis-diena:</p>
+				<p><input type="text" id="peresanaIevade"></p>
+				<button onclick="peresanaLaiks()">Aprēķināt</button>
+				<p id="peresanaIzvade"></p>
+			</div>
+		</div>
+		
+		<div class="big">
+			<h1 class="center">Masīvi</h1>
+			<div class="small">
+				<h3>1. Vingrinājums</h3>
+				<p>1. Vidējais augums: <span id="vidAug">- </span> cm</p>
+				<p>2. Meit. sk. zem 1,45 m: <span id="meitSk">- </span></p>
+				<p>3. Īsākais augums: <span id="iisAug">- </span> cm</p>
+			</div>
+			<div class="small">
+				<h3>2. Vingrinājums</h3>
+				<p>Mazākais gaisa mitrums bija: <span id="gaisaMitr">- </span> %, pulksten <span id="pulksten">--:-- </span>.</p>
+			</div>
+		</div>
+
+		<div>
+			<h1 class="center">String</h1>
+			<div class="small">
+				<h3>1. Vingrinājums</h3>
+				<p id="prataV1"></p>
+				<p id="prataV2"></p>
+			</div>
+			<div class="small">
+				<h3>2. Vingrinājums</h3>
+				<p><input type="text" id="pasakaDzivnieks"> <button onclick="pasakaSearch()">Meklēt</button> <span id="pasakaIzvade" > - </span></p>
+				<h2>Ezis ar zaķi</h2>
+				<p id="pasaka"></p>
+			</div>
+			<div class="small">
+				<h3>3. Vingrinājums</h3>
+				<p><input type="text" id="aizvietojamais"><input type="text" id="aizvietosanasLauks"> <button onclick="rindkopaAizvietot()">Aizvietot</button></p>
+				<p id="lipsum"></p>
+			</div>
+		</div>
+	</body>
+<script src="script.js"></script>
+</html>
