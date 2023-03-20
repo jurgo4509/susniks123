@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+html {
+    font-family: 'Chakra Petch';
+    font-size: 2.5vw;
+}
+
+body {
+    margin: 20px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
