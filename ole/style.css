@@ -2,11 +2,22 @@
 
 html {
     font-family: 'Chakra Petch';
-    font-size: 2.5vw;
+    font-size: 22pt;
 }
 
 body {
     margin: 20px;
     margin-left: 20vw;
     margin-right: 20vw;
+    max-width: 800px;
+    background-color: #eee;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 600px;
+    margin-left: 75px;
 }
