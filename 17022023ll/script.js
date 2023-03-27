@@ -95,3 +95,131 @@ function rindkopaAizvietot(){
     loremIpsum = loremIpsum.replace(aizvietojamais.value, aizvietosanasLauks.value);
     lipsum.innerHTML = loremIpsum;
 }
+
+
+let mas3skoleni = ["Linda", "Kārlis", "Emīls", "Agnese", "Marta", "Elvīra", "Emīls", "Sintija", "Raitis", "Ilze", "Santa", "Gatis"];
+let mas3punkti = [10, 11, 6, 10, 14, 16, 8, 9, 12, 7, 6, 15];
+
+function masVid(masivs){
+    let videjais = 0;
+    for(let i = 0; i < masivs.length; i++){
+        videjais = videjais + masivs[i];
+    }
+    videjais = videjais / masivs.length;
+    return videjais;
+}
+
+masVidP.innerHTML = Math.round(masVid(mas3punkti));
+
+let vaimakspk = "Nē";
+for(let i = 0; i < mas3punkti.length; i++){
+    if(mas3punkti[i] == 16){
+        vaimakspk = "Jā";
+    }
+}
+
+masMaxP.innerHTML = vaimakspk;
+
+masMarP.innerHTML = mas3punkti[4];
+
+let mazpsk = mas3punkti[0];
+for(let i = 0; i < mas3punkti.length; i++){
+    if(mazpsk > mas3punkti[i]){
+        mazpsk = mas3punkti[i];
+    }
+}
+
+lIter = 0;
+mazpksksk = "";
+
+for(let i = 0; i < mas3punkti.length; i++){
+    if(mas3punkti[i] == mazpsk){
+        if(lIter == 0){
+            mazpksksk = mazpksksk + mas3skoleni[i];
+        }
+        if(lIter > 0){
+            mazpksksk = mazpksksk + ", " + mas3skoleni[i];
+        }
+        lIter++;
+    }
+}
+
+masMazP.innerHTML = mazpksksk;
+
+
+const skoleni = [
+    ["Laura", "Lasmane"],
+    ["Artūrs", "Kalniņš"],
+    ["Kristaps", "Šteinbergs"],
+    ["Marks", "Ozols"],
+    ["Krista", "Zemīte"],
+    ["Luīze", "Veinberga"],
+    ["Jānis", "Kļaviņš"],
+    ["Amanda", "Grīva"],
+    ["Nils", "Zāle"],
+    ["Aleksis", "Semjonovs"]
+];
+
+ddm3sk.innerHTML = skoleni[2][0] + " " + skoleni[2][1];
+ddmPsk.innerHTML = skoleni[skoleni.length - 1][0] + " " + skoleni[skoleni.length - 1][1];
+
+for(let i = 0; i < skoleni.length; i++){
+    let sk = i + 1;
+    ddmVsr.innerHTML = ddmVsr.innerHTML + "<p>" + sk + '. ' + skoleni[i][0] + ' ' + skoleni[i][1] + "</p>";
+}
+
+
+const dati = [
+[80, 35, 18, "red"],
+[61, 103, 28, "pink"],
+[145, 127, 31, "cyan"],
+[123, 61, 22, "yellow"],
+[215, 87, 25, "green"]
+]
+
+
+
+let ctx = canva.getContext("2d");
+for(let i = 0; i < dati.length; i++){
+    rinki2d(dati, i);
+}
+
+
+function rinki2d(masivus, aplsk){
+    x = masivus[aplsk][0] * 2;
+    y = masivus[aplsk][1] *2;
+    radius = masivus[aplsk][2] *2;
+    krasa = masivus[aplsk][3];
+    ctx.fillStyle = krasa;
+    bumba(x, y, radius);
+}
+
+
+function bumba(fx, fy, fr) {
+    ctx.beginPath();
+    ctx.arc(fx, fy, fr, 0, 2 * Math.PI);
+    ctx.fill();
+}
+
+
+let panelis = [
+[0, 0, 0, 0, 0, 1, 0, 0],
+[0, 0, 0, 0, 0, 1, 1, 0],
+[1, 1, 1, 1, 1, 1, 1, 1],
+[0, 0, 0, 0, 0, 1, 1, 0],
+[0, 0, 0, 0, 0, 1, 0, 0]
+];
+
+// ctx = panelis.getContext("2d");
+// let x, y, i, j;
+// let r = 20;
+// let rindas = 5;
+// let kolonnas = 8;
+// zim.fillStyle = "yellow";
+// for (j = 0; j < rindas; j ++) {
+// for (i = 0; i < kolonnas; i ++) {
+// x = r + r * 2 * i;
+// y = r + r * 2 * j;
+// bumba();
+// }
+// }

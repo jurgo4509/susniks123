@@ -53,3 +53,7 @@ h3 {
 div {
     margin: 5px;
 }
+
+canvas {
+    max-width: 700px;
+}

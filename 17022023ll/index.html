@@ -3,7 +3,7 @@
 	<head>
   	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-		<title>Datums un laiks</title>
+		<title>Uzdevumi</title>
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
@@ -15,20 +15,6 @@
 				<p><input type="text" id="peresanaIevade"></p>
 				<button onclick="peresanaLaiks()">Aprēķināt</button>
 				<p id="peresanaIzvade"></p>
-			</div>
-		</div>
-		
-		<div class="big">
-			<h1 class="center">Masīvi</h1>
-			<div class="small">
-				<h3>1. Vingrinājums</h3>
-				<p>1. Vidējais augums: <span id="vidAug">- </span> cm</p>
-				<p>2. Meit. sk. zem 1,45 m: <span id="meitSk">- </span></p>
-				<p>3. Īsākais augums: <span id="iisAug">- </span> cm</p>
-			</div>
-			<div class="small">
-				<h3>2. Vingrinājums</h3>
-				<p>Mazākais gaisa mitrums bija: <span id="gaisaMitr">- </span> %, pulksten <span id="pulksten">--:-- </span>.</p>
 			</div>
 		</div>
 
@@ -49,6 +35,42 @@
 				<h3>3. Vingrinājums</h3>
 				<p><input type="text" id="aizvietojamais"><input type="text" id="aizvietosanasLauks"> <button onclick="rindkopaAizvietot()">Aizvietot</button></p>
 				<p id="lipsum"></p>
+		</div>	
+	</div>
+
+	<div class="big">
+			<h1 class="center">Masīvi</h1>
+			<div class="small">
+				<h3>1. Vingrinājums</h3>
+				<p>1. Vidējais augums: <span id="vidAug">- </span> cm</p>
+				<p>2. Meit. sk. zem 1,45 m: <span id="meitSk">- </span></p>
+				<p>3. Īsākais augums: <span id="iisAug">- </span> cm</p>
+			</div>
+			<div class="small">
+				<h3>2. Vingrinājums</h3>
+				<p>Mazākais gaisa mitrums bija: <span id="gaisaMitr">- </span> %, pulksten <span id="pulksten">--:-- </span>.</p>
+			</div>
+			<div class="small">
+				<h3>3. Vingrinājums</h3>
+				<p>Vidējais punktu daudzums: <span id="masVidP"> - </span> p</p>
+				<p>Vai kāds ir saņēmis maks. p. sk: <span id="masMaxP"> - </span></p>
+				<p>Martas punktu daudzums: <span id="masMarP"> - </span> p</p>
+				<p>Skolēns ar vismazāk punktiem: <span id="masMazP"> - </span>.</p>
+			</div>
+			<div class="small">
+				<h3>Divdimensiju masīvi</h3>
+				<p>Trešais skolēns sarakstā: <span id="ddm3sk"></span>.</p>
+				<p>Pēdējais skolēns sarakstā: <span id="ddmPsk"></span>.</p>
+				<p>Viss saraksts:</p>
+				<span id="ddmVsr"></span>
+			</div>
+			<div class="small">
+				<h3>Rinķi ar 2D masīvu</h3>
+				<canvas width="700px" height="350" id="canva"></canvas>
+			</div>
+			<div class="small">
+				<h3>Zimejumi ar 2D masīvu</h3>
+				<canvas width="500px" height="350" id="panelis"></canvas>
 			</div>
 		</div>
 	</body>
