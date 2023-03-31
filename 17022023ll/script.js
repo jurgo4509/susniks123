@@ -223,3 +223,65 @@ let panelis = [
 // bumba();
 // }
 // }
+
+
+let randMas = [];
+
+for(let i = 0; i < 108; i++){
+    randMas[i] = Math.floor((Math.random() * 99) + 1);
+}
+masivsusyy.innerHTML = masOutput(randMas);
+
+masMazVertibaX.innerHTML = masivSearch("min",randMas)[0];
+artVietaMasMazVertibaX.innerHTML = masivSearch("min",randMas)[1];
+
+masLielVertibaX.innerHTML = masivSearch("max",randMas)[0];
+artVietaMasLielVertibaX.innerHTML = masivSearch("max",randMas)[1];
+
+
+
+
+
+function masSwap(a, b, masivs){
+    let temp = masivs[a];
+    masivs[a] = masivs[b];
+    masivs[b] = temp;
+    return masivs;
+}
+
+
+function masivSearch(maxVaiMin, masivs){
+    if(maxVaiMin == "max"){
+        let max = masivs[0];
+        let iterator = 0;
+        for(let i = 1; i < masivs.length; i++){
+            if(max < masivs[i]){
+                max = masivs[i];
+                iterator = i;
+            }
+        }
+        let returnmas = [max, iterator + 1];
+        return returnmas;
+    }
+    else if(maxVaiMin == "min"){
+        let min = masivs[0];
+        let iterator = 0;
+        for(let i = 1; i < masivs.length; i++){
+            if(min > masivs[i]){
+                min = masivs[i];
+                iterator = i;
+            }
+        }
+        let returnmas = [min, iterator + 1];
+        return returnmas;
+    }
+}
+
+
+function masOutput(masivs){
+    let masivoutput = masivs[0];
+    for(let i = 1; i < masivs.length; i++){
+        masivoutput = masivoutput + ", " + masivs[i];
+    }
+    return masivoutput;
+}
